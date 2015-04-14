@@ -1,0 +1,17 @@
+@mixin clearfix {
+	zoom: 1;
+	&:before,
+	&:after {
+		display: block;
+		height: 0;
+		visibility: hidden;
+		content: "\0020";
+		clear: both;
+	}
+}
+
+@mixin hide-text{
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
